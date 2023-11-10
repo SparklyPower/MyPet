@@ -643,11 +643,16 @@ public abstract class EntityMyPet extends PathfinderMob implements MyPetMinecraf
 			if (!isVehicle()) {
 				hasRider = false;
 				this.setMaxUpStep(0.5F); // climb height -> halfslab
-				Location playerLoc = getOwner().getPlayer().getLocation();
-				Location petLoc = getBukkitEntity().getLocation();
-				petLoc.setYaw(playerLoc.getYaw());
-				petLoc.setPitch(playerLoc.getPitch());
-				getOwner().getPlayer().teleport(petLoc);
+				// Don't attempt to teleport the player to the pet's location
+				// Because with SparklyPaper worlds are ticked in parallel, we can't respawn players in another world
+				// Weirdly enough, the crash only seems to happen if you are mounted in a Warden and you teleport somewhere else
+				// This also affects vanilla Paper, you are always teleported back to the Warden's location
+				// https://github.com/MyPetORG/MyPet/issues/1647
+				// Location playerLoc = getOwner().getPlayer().getLocation();
+				// Location petLoc = getBukkitEntity().getLocation();
+				// petLoc.setYaw(playerLoc.getYaw());
+				// petLoc.setPitch(playerLoc.getPitch());
+				// getOwner().getPlayer().teleport(petLoc);
 			}
 		} else {
 			if (isVehicle()) {
