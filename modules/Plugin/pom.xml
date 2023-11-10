@@ -72,7 +72,7 @@
         </dependency>
 
 
-        <dependency>
+        <!-- <dependency>
             <groupId>de.keyle</groupId>
             <artifactId>mypet-compat-v1_8_R3</artifactId>
             <version>1</version>
@@ -216,7 +216,7 @@
                     <artifactId>craftbukkit</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>de.keyle</groupId>
             <artifactId>mypet-compat-v1_20_R2</artifactId>
@@ -229,11 +229,11 @@
             </exclusions>
         </dependency>
 
-        <dependency>
+        <!-- <dependency>
             <groupId>de.keyle</groupId>
             <artifactId>mypet-gui</artifactId>
             <version>1</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

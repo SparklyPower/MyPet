@@ -31,7 +31,7 @@
     <modules>
         <module>modules/API</module>
         <module>modules/Skills</module>
-        <module>modules/v1_8_R3</module>
+        <!-- <module>modules/v1_8_R3</module>
         <module>modules/v1_9_R2</module>
         <module>modules/v1_12_R1</module>
         <module>modules/v1_16_R1</module>
@@ -43,9 +43,9 @@
         <module>modules/v1_19_R1_2</module>
         <module>modules/v1_19_R2</module>
         <module>modules/v1_19_R3</module>
-        <module>modules/v1_20_R1</module>
+        <module>modules/v1_20_R1</module> -->
         <module>modules/v1_20_R2</module>
-        <module>modules/GUI</module>
+        <!-- <module>modules/GUI</module> -->
         <module>modules/Plugin</module>
         <module>modules/MyPet</module>
 
